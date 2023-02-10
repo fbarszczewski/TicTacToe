@@ -45,6 +45,21 @@ namespace TicTacToe
 
         }
 
+        public static void WinCheck(int player)
+        {
+            char playerSign = player == 1 ? 'x' : 'o';
+
+            if ( ((playField[0, 0]== playerSign)&& (playField[0, 1] == playerSign)&& (playField[0, 2] == playerSign)) ||
+                ((playField[1, 0] == playerSign) && (playField[1, 1] == playerSign) && (playField[1, 2] == playerSign)) ||
+                ((playField[2, 0] == playerSign) && (playField[2, 1] == playerSign) && (playField[2, 2] == playerSign)) ||
+                ((playField[0, 0] == playerSign) && (playField[0, 1] == playerSign) && (playField[0, 2] == playerSign)) ||
+                )
+            {
+
+            }
+
+
+        }
         public static void PrintBoard()
         {
             Console.WriteLine("     |     |     ");
